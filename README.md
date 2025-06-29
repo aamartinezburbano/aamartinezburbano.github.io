@@ -3,131 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Andrés Martínez | Física Cuántica</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Andrés Martínez | Física Cuántica</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
     }
     header {
-      background: linear-gradient(to right, #111, #222);
+      background: linear-gradient(135deg, #000000, #222222);
       color: white;
-      padding: 40px 0;
+      padding: 80px 0;
       text-align: center;
     }
     header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      font-size: 3rem;
+      font-weight: 700;
     }
     header p {
-      font-size: 1.2em;
-      color: #ccc;
+      font-size: 1.2rem;
+      color: #cccccc;
     }
-    nav {
-      background-color: #1a1a1a;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      padding: 15px;
+    section {
+      padding: 60px 0;
     }
-    nav a {
+    .navbar {
+      background-color: #111111;
+    }
+    .navbar-nav .nav-link {
       color: white;
-      text-decoration: none;
       font-weight: 600;
-      transition: color 0.3s ease;
     }
-    nav a:hover {
-      color: #00bcd4;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-      background-color: white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-    h2 {
-      font-size: 1.8em;
-      margin-bottom: 15px;
-      color: #222;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
-    }
-    ul {
-      list-style: disc;
-      padding-left: 20px;
-    }
-    a {
-      color: #0077cc;
+    .navbar-nav .nav-link:hover {
+      color: #0dcaf0;
     }
     footer {
+      background-color: #111111;
+      color: white;
       text-align: center;
       padding: 20px;
-      font-size: 0.9em;
-      background-color: #111;
-      color: white;
-      margin-top: 60px;
+    }
+    .highlight {
+      color: #0dcaf0;
+      font-weight: 500;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Dr. Andrés Martínez</h1>
-    <p>Investigador en Física Cuántica, Información Cuántica y Dinámica de Sistemas Correlacionados</p>
-  </header>
 
-  <nav>
-    <a href="#biografia">Biografía</a>
-    <a href="#investigacion">Investigación</a>
-    <a href="#publicaciones">Publicaciones</a>
-    <a href="#contacto">Contacto</a>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Andrés Martínez</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#bio">Biografía</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research">Investigación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publicaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <div class="container">
-    <section id="biografia">
-      <h2>Biografía</h2>
-      <p>Soy físico con maestría en física, especializado en sistemas cuánticos fuertemente correlacionados e información cuántica. Mi interés se centra en comprender y modelar fenómenos cuánticos no triviales que emergen en sistemas abiertos y complejos. Actualmente me dedico a investigar técnicas híbridas que combinan inteligencia artificial con simulaciones cuánticas.</p>
-    </section>
+  <header>
+    <div class="container">
+      <h1>Dr. Andrés Martínez</h1>
+      <p>Física Cuántica · Información Cuántica · Computación Cuántica</p>
+    </div>
+  </header>
 
-    <section id="investigacion">
-      <h2>Líneas de Investigación</h2>
-      <ul>
-        <li>Computación cuántica con cúbits superconductores, centros NV y plataformas ópticas</li>
-        <li>Redes tensoriales y estados cuánticos representados por redes neuronales (Neural Quantum States)</li>
-        <li>Distribución cuántica de claves (QKD) y protocolos multipartitos</li>
-        <li>Dinámica no unitaria y teoría de la información cuántica</li>
+  <section id="bio">
+    <div class="container">
+      <h2 class="text-center mb-4">Biografía</h2>
+      <p class="lead text-center">Soy físico con maestría en física, especializado en sistemas cuánticos fuertemente correlacionados e información cuántica. Mi interés se centra en comprender fenómenos emergentes en sistemas abiertos y desarrollar herramientas teóricas y computacionales para explorarlos.</p>
+    </div>
+  </section>
+
+  <section id="research" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Líneas de Investigación</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Computación cuántica con cúbits superconductores y centros NV</li>
+        <li class="list-group-item">Estados cuánticos neuronales (Neural Quantum States)</li>
+        <li class="list-group-item">Distribución de claves cuánticas (QKD) en redes metropolitanas</li>
+        <li class="list-group-item">Dinámica cuántica no unitaria y teoría de la información cuántica</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section id="publicaciones">
-      <h2>Publicaciones</h2>
-      <p>Consulta mis publicaciones más recientes en:</p>
-      <ul>
-        <li><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
-        <li><a href="https://orcid.org/0000-0000-0000-0000" target="_blank">ORCID</a></li>
-        <li><a href="https://arxiv.org" target="_blank">arXiv</a></li>
+  <section id="publications">
+    <div class="container">
+      <h2 class="text-center mb-4">Publicaciones</h2>
+      <p class="text-center">Puedes encontrar mis publicaciones en:</p>
+      <div class="d-flex justify-content-center gap-4">
+        <a href="https://scholar.google.com" class="btn btn-outline-primary" target="_blank">Google Scholar</a>
+        <a href="https://orcid.org/0000-0000-0000-0000" class="btn btn-outline-success" target="_blank">ORCID</a>
+        <a href="https://arxiv.org" class="btn btn-outline-dark" target="_blank">arXiv</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contacto</h2>
+      <p class="text-center">¿Quieres colaborar o saber más? Contáctame:</p>
+      <ul class="list-unstyled text-center">
+        <li>Email: <code>andres[at]instituto[dot]edu</code></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/andres-martinez" target="_blank">@andres-martinez</a></li>
+        <li>GitHub: <a href="https://github.com/andres-martinez" target="_blank">@andres-martinez</a></li>
       </ul>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Email: <code>andres[at]instituto[dot]edu</code></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/andres-martinez" target="_blank">@andres-martinez</a></p>
-      <p>GitHub: <a href="https://github.com/andres-martinez" target="_blank">github.com/andres-martinez</a></p>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2025 Dr. Andrés Martínez · Todos los derechos reservados
+    &copy; 2025 Andrés Martínez · Todos los derechos reservados
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
