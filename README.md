@@ -70,7 +70,7 @@
 
   <header>
     <div class="container">
-      <h1>Dr. Andrés Martínez</h1>
+      <h1> Andrés Martínez</h1>
       <p>Física Cuántica · Información Cuántica · Computación Cuántica</p>
     </div>
   </header>
